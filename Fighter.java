@@ -3,7 +3,7 @@ package boxing;
 public class Fighter {
 	
 	String name;
-	int damage, health, weight, dodge; //dodge: bloklama yeteneði
+	int damage, health, weight, dodge; 
 	
 	public Fighter(String name, int damage, int health, int weight, int dodge) {
 		
@@ -18,7 +18,7 @@ public class Fighter {
 			this.dodge = 0;
 	}
 	
-	boolean isDodge() // Bloklama þansý hesaplamasý
+	boolean isDodge() 
 	{
 		double randomNumber = Math.random() * 100;
 		return randomNumber <= this.dodge;
@@ -31,12 +31,12 @@ public class Fighter {
 		if(foe.isDodge())
 		{
 			System.out.println(foe.name + " blocked incoming damage \n");
-			return foe.health; //hasarý blokladýðý için caný azalmaz
+			return foe.health; 
 		}
 		
 		if(foe.health - this.damage < 0)
 		{
-			return 0;  //negatif can olmaz, o yüzden sýfýrla
+			return 0;  
 		}
 		
 		return foe.health - this.damage;
