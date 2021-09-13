@@ -56,15 +56,15 @@ public class Match {
 			System.out.println(this.f1.name + "'s health at the beginning: " + this.f1.health);
 			System.out.println(this.f2.name + "'s health at the beginning: " + this.f2.health);
 			
-			while(this.f1.health > 0 && f2.health > 0) //canlarý varken dövüþecekler (buraya true yazsakta olur)
+			while(this.f1.health > 0 && f2.health > 0) 
 			{
 				System.out.println("\n--NEW ROUND--");
 				
-				/*this.f2.health = this.f1.hit(f2); //f1 baþlýyor, rakip f2 hit'e gönderildi
-				if(isWin()) // canlarý 0'ýn altýna indiðinde dövüþ devam etmesin diye koyduk, üstteki while ile bunu saðlayamayýz, her seferinde kontrol etmek gerek
+				/*this.f2.health = this.f1.hit(f2); 
+				if(isWin()) 
 					break;
 				
-				this.f1.health = this.f2.hit(this.f1); //2. vuruþ f2'de, sýrayla vuruyorlar
+				this.f1.health = this.f2.hit(this.f1); 
 				if(isWin())
 					break;*/
 				if(f == f1)
